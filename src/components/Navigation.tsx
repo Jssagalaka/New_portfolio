@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import ThemeSelector from "@/components/ThemeSelector";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,7 +11,10 @@ const Navigation = () => {
   const navItems = [
     { href: "#home", label: "Home" },
     { href: "#about", label: "About" },
+    { href: "#skills", label: "Skills" },
+    { href: "#experience", label: "Experience" },
     { href: "#projects", label: "Projects" },
+    { href: "#testimonials", label: "Testimonials" },
     { href: "#contact", label: "Contact" },
   ];
 
@@ -36,9 +40,9 @@ const Navigation = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.8 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-smooth ${
+      className={`fixed top-0 left-0 right-0 z-[100] transition-smooth ${
         scrolled 
-          ? "glass backdrop-blur-xl border-b border-border/30" 
+          ? "glass backdrop-blur-xl border-b border-border/30 shadow-lg" 
           : "bg-transparent"
       }`}
     >
@@ -54,7 +58,7 @@ const Navigation = () => {
           </motion.div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-6">
             {navItems.map((item, index) => (
               <motion.button
                 key={item.href}
@@ -62,15 +66,18 @@ const Navigation = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
                 onClick={() => scrollToSection(item.href)}
-                className="text-foreground hover:text-primary transition-smooth relative group"
+                className="text-foreground hover:text-primary transition-smooth relative group font-medium"
               >
                 {item.label}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-smooth" />
               </motion.button>
             ))}
+            
+            <ThemeSelector />
+            
             <Button 
               size="sm" 
-              className="glass glass-hover neon-glow"
+              className="glass glass-hover neon-glow font-medium"
               onClick={() => scrollToSection("#contact")}
             >
               Hire Me
