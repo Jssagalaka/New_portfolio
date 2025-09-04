@@ -1,12 +1,83 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import ParticleBackground from "@/components/ParticleBackground";
+import Navigation from "@/components/Navigation";
+import Hero from "@/components/Hero";
+import About from "@/components/About";
+import Projects from "@/components/Projects";
+import Contact from "@/components/Contact";
+import { motion } from "framer-motion";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="relative min-h-screen overflow-x-hidden">
+      {/* Particle Background */}
+      <ParticleBackground />
+      
+      {/* Navigation */}
+      <Navigation />
+      
+      {/* Main Content */}
+      <main className="relative z-10">
+        {/* Hero Section */}
+        <section id="home">
+          <Hero />
+        </section>
+        
+        {/* About Section */}
+        <section id="about">
+          <About />
+        </section>
+        
+        {/* Projects Section */}
+        <section id="projects">
+          <Projects />
+        </section>
+        
+        {/* Contact Section */}
+        <section id="contact">
+          <Contact />
+        </section>
+      </main>
+      
+      {/* Footer */}
+      <footer className="relative z-10 py-12 border-t border-border/30">
+        <div className="container mx-auto px-6">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center"
+          >
+            <div className="text-2xl font-bold gradient-text mb-4">Alex Johnson</div>
+            <p className="text-muted-foreground mb-6">
+              Full Stack Developer • Building the future, one line of code at a time
+            </p>
+            <p className="text-sm text-muted-foreground">
+              © 2024 Alex Johnson. All rights reserved. Built with React & Vite.
+            </p>
+          </motion.div>
+        </div>
+      </footer>
+      
+      {/* Scroll to Top Button */}
+      <motion.button
+        initial={{ opacity: 0, scale: 0 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ delay: 2 }}
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        className="fixed bottom-8 right-8 p-4 glass glass-hover neon-glow rounded-full z-50
+                   transition-smooth hover:bg-primary/20"
+        aria-label="Scroll to top"
+      >
+        <motion.div
+          animate={{ y: [0, -3, 0] }}
+          transition={{ duration: 2, repeat: Infinity }}
+        >
+          ↑
+        </motion.div>
+      </motion.button>
     </div>
   );
 };
