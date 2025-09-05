@@ -3,19 +3,22 @@ import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import ThemeSelector from "@/components/ThemeSelector";
+import LanguageSelector from "@/components/LanguageSelector";
+import { useLanguage } from "@/components/LanguageProvider";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const { t } = useLanguage();
 
   const navItems = [
-    { href: "#home", label: "Home" },
-    { href: "#about", label: "About" },
-    { href: "#skills", label: "Skills" },
-    { href: "#experience", label: "Experience" },
-    { href: "#projects", label: "Projects" },
-    { href: "#testimonials", label: "Testimonials" },
-    { href: "#contact", label: "Contact" },
+    { href: "#home", label: t("nav.home") },
+    { href: "#about", label: t("nav.about") },
+    { href: "#skills", label: t("nav.skills") },
+    { href: "#experience", label: t("nav.experience") },
+    { href: "#projects", label: t("nav.projects") },
+    { href: "#testimonials", label: t("nav.testimonials") },
+    { href: "#contact", label: t("nav.contact") },
   ];
 
   useEffect(() => {
@@ -54,7 +57,7 @@ const Navigation = () => {
             className="text-2xl font-bold gradient-text cursor-pointer"
             onClick={() => scrollToSection("#home")}
           >
-            AJ
+            Alex Johnson
           </motion.div>
 
           {/* Desktop Navigation */}
@@ -74,13 +77,14 @@ const Navigation = () => {
             ))}
             
             <ThemeSelector />
+            <LanguageSelector />
             
             <Button 
               size="sm" 
               className="glass glass-hover neon-glow font-medium"
               onClick={() => scrollToSection("#contact")}
             >
-              Hire Me
+              {t("nav.hireMe")}
             </Button>
           </div>
 
@@ -130,7 +134,7 @@ const Navigation = () => {
                 className="w-full glass glass-hover neon-glow"
                 onClick={() => scrollToSection("#contact")}
               >
-                Hire Me
+                {t("nav.hireMe")}
               </Button>
             </div>
           </div>

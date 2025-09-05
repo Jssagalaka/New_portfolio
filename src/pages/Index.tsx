@@ -8,8 +8,11 @@ import Projects from "@/components/Projects";
 import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
 import { motion } from "framer-motion";
+import { useLanguage } from "@/components/LanguageProvider";
 
 const Index = () => {
+  const { t } = useLanguage();
+  
   return (
     <div className="relative min-h-screen overflow-x-hidden">
       {/* Particle Background */}
@@ -19,7 +22,7 @@ const Index = () => {
       <Navigation />
       
       {/* Main Content */}
-      <main className="relative z-10">
+      <main className="relative z-10 pt-20">
         {/* Hero Section */}
         <section id="home">
           <Hero />
@@ -66,12 +69,12 @@ const Index = () => {
             viewport={{ once: true }}
             className="text-center"
           >
-            <div className="text-2xl font-bold gradient-text mb-4">Alex Johnson</div>
+            <div className="text-2xl font-bold gradient-text mb-4">{t("hero.name")}</div>
             <p className="text-muted-foreground mb-6">
-              Full Stack Developer • Building the future, one line of code at a time
+              {t("footer.description")}
             </p>
             <p className="text-sm text-muted-foreground">
-              © 2024 Alex Johnson. All rights reserved. Built with React & Vite.
+              {t("footer.copyright")}
             </p>
           </motion.div>
         </div>

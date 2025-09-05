@@ -3,15 +3,17 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ChevronDown, Download, Mail, Github, Linkedin } from "lucide-react";
 import developerPortrait from "@/assets/developer-portrait.jpg";
+import { useLanguage } from "@/components/LanguageProvider";
 
 const Hero = () => {
   const [currentRole, setCurrentRole] = useState(0);
+  const { t } = useLanguage();
   
   const roles = [
-    "MERN Stack Developer",
-    "Full Stack Engineer",
-    "AI/ML Enthusiast",
-    "Open Source Contributor"
+    t("hero.role1"),
+    t("hero.role2"),
+    t("hero.role3"),
+    t("hero.role4")
   ];
 
   useEffect(() => {
@@ -39,9 +41,9 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.8 }}
             >
-              Hello, I'm{" "}
+              {t("hero.greeting")}{" "}
               <span className="gradient-text block">
-                Alex Johnson
+                {t("hero.name")}
               </span>
             </motion.h1>
             
@@ -64,8 +66,7 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.8 }}
             >
-              Crafting innovative digital experiences with modern technologies. 
-              Passionate about building scalable applications and contributing to open-source projects.
+              {t("hero.description")}
             </motion.p>
             
             <motion.div 
@@ -76,11 +77,11 @@ const Hero = () => {
             >
               <Button size="lg" className="glass glass-hover neon-glow">
                 <Mail className="w-5 h-5 mr-2" />
-                Hire Me
+                {t("nav.hireMe")}
               </Button>
               <Button variant="outline" size="lg" className="glass glass-hover">
                 <Download className="w-5 h-5 mr-2" />
-                Download CV
+                {t("hero.downloadCV")}
               </Button>
             </motion.div>
             

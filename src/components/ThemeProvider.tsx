@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
 
-type Theme = "dark" | "light" | "cyber" | "neon" | "minimal" | "galaxy";
+type Theme = "dark" | "light";
 
 type ThemeProviderContextType = {
   theme: Theme;
@@ -11,12 +11,8 @@ type ThemeProviderContextType = {
 const ThemeProviderContext = createContext<ThemeProviderContextType | undefined>(undefined);
 
 export const themes = [
-  { value: "dark" as Theme, label: "Dark Space", description: "Deep space with electric accents" },
-  { value: "light" as Theme, label: "Light Pro", description: "Clean professional light theme" },
-  { value: "cyber" as Theme, label: "Cyberpunk", description: "Neon cyberpunk vibes" },
-  { value: "neon" as Theme, label: "Neon Glow", description: "Bright neon highlights" },
-  { value: "minimal" as Theme, label: "Minimal Pro", description: "Clean minimalist design" },
-  { value: "galaxy" as Theme, label: "Galaxy", description: "Cosmic purple galaxy theme" },
+  { value: "dark" as Theme, label: "Dark Mode", description: "Professional dark theme" },
+  { value: "light" as Theme, label: "Light Mode", description: "Clean light theme" },
 ];
 
 interface ThemeProviderProps {
@@ -37,7 +33,7 @@ export function ThemeProvider({
 
   useEffect(() => {
     const root = window.document.documentElement;
-    root.classList.remove("dark", "light", "cyber", "neon", "minimal", "galaxy");
+    root.classList.remove("dark", "light");
     root.classList.add(theme);
   }, [theme]);
 
