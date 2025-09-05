@@ -7,6 +7,7 @@ import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
 import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
 import { useLanguage } from "@/components/LanguageProvider";
 
@@ -60,25 +61,7 @@ const Index = () => {
       </main>
       
       {/* Footer */}
-      <footer className="relative z-10 py-12 border-t border-border/30">
-        <div className="container mx-auto px-6">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="text-center"
-          >
-            <div className="text-2xl font-bold gradient-text mb-4">{t("hero.name")}</div>
-            <p className="text-muted-foreground mb-6">
-              {t("footer.description")}
-            </p>
-            <p className="text-sm text-muted-foreground">
-              {t("footer.copyright")}
-            </p>
-          </motion.div>
-        </div>
-      </footer>
+      <Footer />
       
       {/* Scroll to Top Button */}
       <motion.button

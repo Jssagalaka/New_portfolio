@@ -1,7 +1,9 @@
 import { motion } from "framer-motion";
 import { Code2, Database, Globe, Smartphone, Brain, Zap } from "lucide-react";
+import { useLanguage } from "@/components/LanguageProvider";
 
 const About = () => {
+  const { t } = useLanguage();
   const skills = [
     { name: "Frontend", icon: Globe, level: 95, color: "from-primary to-secondary" },
     { name: "Backend", icon: Database, level: 90, color: "from-secondary to-accent" },
@@ -26,12 +28,10 @@ const About = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl lg:text-display font-bold mb-6">
-            About <span className="gradient-text">Me</span>
+            {t("about.title")}
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            I'm a passionate full-stack developer with 5+ years of experience building 
-            scalable web applications. I love turning complex problems into simple, 
-            beautiful solutions that users love.
+            {t("about.description")}
           </p>
         </motion.div>
 

@@ -50,8 +50,17 @@ const translations = {
     "skills.backend": "Backend Development",
     "skills.database": "Database & Tools",
     
+    // Experience Section  
+    "experience.title": "Professional Experience",
+    "experience.subtitle": "Building innovative solutions and leading development teams",
+    "experience.education": "Education",
+    "experience.certifications": "Certifications",
+    
+    // Testimonials Section
+    "testimonials.title": "Client Testimonials", 
+    "testimonials.subtitle": "What clients say about working with me on their projects",
+    
     // Contact Section
-    "contact.title": "Let's Work Together",
     "contact.subtitle": "Ready to bring your ideas to life",
     "contact.form.name": "Your Name",
     "contact.form.email": "Your Email", 
@@ -105,6 +114,16 @@ const translations = {
     "skills.frontend": "फ्रंटएंड डेवलपमेंट", 
     "skills.backend": "बैकएंड डेवलपमेंट",
     "skills.database": "डेटाबेस और उपकरण",
+    
+    // Experience Section  
+    "experience.title": "पेशेवर अनुभव",
+    "experience.subtitle": "नवाचार समाधान बनाना और डेवलपमेंट टीमों का नेतृत्व करना",
+    "experience.education": "शिक्षा",
+    "experience.certifications": "प्रमाणपत्र",
+    
+    // Testimonials Section
+    "testimonials.title": "ग्राहक प्रशंसापत्र", 
+    "testimonials.subtitle": "ग्राहक मेरे साथ काम करने के बारे में क्या कहते हैं",
     
     // Contact Section
     "contact.title": "आइए मिलकर काम करें",
@@ -162,6 +181,16 @@ const translations = {
     "skills.backend": "Desarrollo Backend", 
     "skills.database": "Base de Datos y Herramientas",
     
+    // Experience Section  
+    "experience.title": "Experiencia Profesional",
+    "experience.subtitle": "Construyendo soluciones innovadoras y liderando equipos de desarrollo",
+    "experience.education": "Educación",
+    "experience.certifications": "Certificaciones",
+    
+    // Testimonials Section
+    "testimonials.title": "Testimonios de Clientes", 
+    "testimonials.subtitle": "Lo que los clientes dicen sobre trabajar conmigo en sus proyectos",
+    
     // Contact Section
     "contact.title": "Trabajemos Juntos",
     "contact.subtitle": "Listo para dar vida a tus ideas",
@@ -217,6 +246,16 @@ const translations = {
     "skills.frontend": "Développement Frontend",
     "skills.backend": "Développement Backend",
     "skills.database": "Base de Données et Outils",
+    
+    // Experience Section  
+    "experience.title": "Expérience Professionnelle",
+    "experience.subtitle": "Construire des solutions innovantes et diriger des équipes de développement",
+    "experience.education": "Éducation",
+    "experience.certifications": "Certifications",
+    
+    // Testimonials Section
+    "testimonials.title": "Témoignages Clients", 
+    "testimonials.subtitle": "Ce que les clients disent sur le fait de travailler avec moi sur leurs projets",
     
     // Contact Section
     "contact.title": "Travaillons Ensemble",

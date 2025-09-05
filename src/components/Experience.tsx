@@ -1,7 +1,9 @@
 import { motion } from "framer-motion";
 import { Calendar, MapPin, ExternalLink, Award } from "lucide-react";
+import { useLanguage } from "@/components/LanguageProvider";
 
 const Experience = () => {
+  const { t } = useLanguage();
   const experiences = [
     {
       title: "Senior MERN Stack Developer",
@@ -84,10 +86,10 @@ const Experience = () => {
           className="mb-20"
         >
           <h2 className="text-4xl font-bold gradient-text text-center mb-6">
-            Professional Experience
+            {t("experience.title")}
           </h2>
           <p className="text-muted-foreground text-lg text-center max-w-2xl mx-auto mb-12">
-            Building innovative solutions and leading development teams
+            {t("experience.subtitle")}
           </p>
 
           <div className="relative">
@@ -175,7 +177,7 @@ const Experience = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-2xl font-bold gradient-text mb-6">Education</h3>
+            <h3 className="text-2xl font-bold gradient-text mb-6">{t("experience.education")}</h3>
             {education.map((edu, index) => (
               <div key={index} className="glass glass-hover rounded-xl p-6 hover-lift">
                 <h4 className="text-lg font-semibold text-foreground mb-2">{edu.degree}</h4>
@@ -206,7 +208,7 @@ const Experience = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-2xl font-bold gradient-text mb-6">Certifications</h3>
+            <h3 className="text-2xl font-bold gradient-text mb-6">{t("experience.certifications")}</h3>
             <div className="space-y-4">
               {certifications.map((cert, index) => (
                 <motion.div

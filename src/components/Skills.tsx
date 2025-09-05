@@ -1,23 +1,25 @@
 import { motion } from "framer-motion";
 import { Code, Database, Globe, Smartphone, Brain, Zap } from "lucide-react";
+import { useLanguage } from "@/components/LanguageProvider";
 
 const Skills = () => {
+  const { t } = useLanguage();
   const skillCategories = [
     {
       icon: <Code className="w-8 h-8" />,
-      title: "Frontend Development",
+      title: t("skills.frontend"),
       skills: ["React.js", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
       color: "from-blue-500 to-purple-600"
     },
     {
       icon: <Database className="w-8 h-8" />,
-      title: "Backend Development", 
+      title: t("skills.backend"),
       skills: ["Node.js", "Express.js", "MongoDB", "PostgreSQL", "REST APIs"],
       color: "from-green-500 to-teal-600"
     },
     {
       icon: <Globe className="w-8 h-8" />,
-      title: "Full Stack",
+      title: t("skills.database"),
       skills: ["MERN Stack", "Authentication", "State Management", "Cloud Deploy"],
       color: "from-orange-500 to-red-600"
     },
@@ -51,9 +53,9 @@ const Skills = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold gradient-text mb-6">Technical Expertise</h2>
+          <h2 className="text-4xl font-bold gradient-text mb-6">{t("skills.title")}</h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Mastering cutting-edge technologies to build exceptional digital experiences
+            {t("skills.subtitle")}
           </p>
         </motion.div>
 

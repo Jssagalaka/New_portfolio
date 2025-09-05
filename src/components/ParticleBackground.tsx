@@ -2,11 +2,21 @@ import { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadStarsPreset } from "tsparticles-preset-stars";
 import type { Engine } from "tsparticles-engine";
+import { useTheme } from "@/components/ThemeProvider";
 
 const ParticleBackground = () => {
+  const { theme } = useTheme();
   const particlesInit = useCallback(async (engine: Engine) => {
     await loadStarsPreset(engine);
   }, []);
+
+  // Theme-aware colors
+  const isDark = theme === "dark";
+  const particleColors = isDark 
+    ? ["#9333ea", "#06b6d4", "#8b5cf6"] 
+    : ["#3b82f6", "#8b5cf6", "#06b6d4"];
+  const linkColor = isDark ? "#9333ea" : "#3b82f6";
+  const linkOpacity = isDark ? 0.2 : 0.15;
 
   return (
     <Particles
@@ -19,20 +29,20 @@ const ParticleBackground = () => {
         },
         particles: {
           number: {
-            value: 100,
+            value: isDark ? 100 : 80,
             density: {
               enable: true,
               area: 800,
             },
           },
           color: {
-            value: ["#9333ea", "#06b6d4", "#8b5cf6"],
+            value: particleColors,
           },
           shape: {
             type: "circle",
           },
           opacity: {
-            value: { min: 0.1, max: 0.8 },
+            value: { min: isDark ? 0.1 : 0.2, max: isDark ? 0.8 : 0.6 },
             animation: {
               enable: true,
               speed: 1,
@@ -48,8 +58,8 @@ const ParticleBackground = () => {
           links: {
             enable: true,
             distance: 150,
-            color: "#9333ea",
-            opacity: 0.2,
+            color: linkColor,
+            opacity: linkOpacity,
             width: 1,
           },
           move: {

@@ -1,7 +1,9 @@
 import { motion } from "framer-motion";
 import { Star, Quote } from "lucide-react";
+import { useLanguage } from "@/components/LanguageProvider";
 
 const Testimonials = () => {
+  const { t } = useLanguage();
   const testimonials = [
     {
       name: "Sarah Chen",
@@ -69,9 +71,9 @@ const Testimonials = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold gradient-text mb-6">Client Testimonials</h2>
+          <h2 className="text-4xl font-bold gradient-text mb-6">{t("testimonials.title")}</h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            What clients say about working with me on their projects
+            {t("testimonials.subtitle")}
           </p>
         </motion.div>
 
