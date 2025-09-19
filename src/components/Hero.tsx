@@ -36,7 +36,7 @@ const Hero = () => {
             className="text-left"
           >
             <motion.h1 
-              className="text-6xl lg:text-hero font-bold mb-6"
+              className="text-6xl md:text-7xl lg:text-hero font-bold mb-6 leading-tight"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.8 }}
@@ -47,7 +47,7 @@ const Hero = () => {
               </span>
             </motion.h1>
             
-            <div className="text-2xl lg:text-3xl mb-8 h-16 flex items-center">
+            <div className="text-3xl lg:text-4xl mb-8 h-20 flex items-center">
               <motion.span
                 key={currentRole}
                 initial={{ opacity: 0, y: 20 }}
@@ -61,7 +61,7 @@ const Hero = () => {
             </div>
             
             <motion.p 
-              className="text-lg text-muted-foreground mb-8 max-w-lg leading-relaxed"
+              className="text-xl lg:text-2xl text-muted-foreground mb-10 max-w-lg leading-relaxed"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.8 }}
@@ -75,12 +75,12 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6, duration: 0.8 }}
             >
-              <Button size="lg" className="glass glass-hover neon-glow">
-                <Mail className="w-5 h-5 mr-2" />
+              <Button size="lg" className="glass glass-hover neon-glow text-lg px-8 py-6">
+                <Mail className="w-6 h-6 mr-3" />
                 {t("nav.hireMe")}
               </Button>
-              <Button variant="outline" size="lg" className="glass glass-hover">
-                <Download className="w-5 h-5 mr-2" />
+              <Button variant="outline" size="lg" className="glass glass-hover text-lg px-8 py-6 border-2">
+                <Download className="w-6 h-6 mr-3" />
                 {t("hero.downloadCV")}
               </Button>
             </motion.div>
@@ -91,11 +91,11 @@ const Hero = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.8, duration: 0.8 }}
             >
-              <a href="#" className="text-muted-foreground hover:text-primary transition-smooth hover:scale-110">
-                <Github className="w-6 h-6" />
+              <a href="#" className="text-muted-foreground hover:text-primary transition-smooth hover:scale-125 p-2 rounded-full glass glass-hover">
+                <Github className="w-8 h-8" />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-secondary transition-smooth hover:scale-110">
-                <Linkedin className="w-6 h-6" />
+              <a href="#" className="text-muted-foreground hover:text-secondary transition-smooth hover:scale-125 p-2 rounded-full glass glass-hover">
+                <Linkedin className="w-8 h-8" />
               </a>
             </motion.div>
           </motion.div>

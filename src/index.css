@@ -50,37 +50,37 @@
 
   /* Light Professional Theme */
   .light {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 250 100% 99%;
+    --foreground: 220 30% 15%;
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 220 30% 15%;
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-    --primary: 221.2 83.2% 53.3%;
-    --primary-foreground: 210 40% 98%;
-    --secondary: 210 40% 96%;
-    --secondary-foreground: 222.2 84% 4.9%;
-    --muted: 210 40% 96%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-    --accent: 210 40% 96%;
-    --accent-foreground: 222.2 84% 4.9%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 221.2 83.2% 53.3%;
+    --popover-foreground: 220 30% 15%;
+    --primary: 270 91% 65%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 200 91% 60%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 210 40% 95%;
+    --muted-foreground: 220 30% 40%;
+    --accent: 180 91% 67%;
+    --accent-foreground: 220 30% 15%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 20% 88%;
+    --input: 220 20% 92%;
+    --ring: 270 91% 65%;
     
-    --gradient-primary: linear-gradient(135deg, hsl(221.2 83.2% 53.3%) 0%, hsl(262.1 83.3% 57.8%) 100%);
-    --gradient-secondary: linear-gradient(135deg, hsl(210 40% 96%) 0%, hsl(221.2 83.2% 53.3%) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(0 0% 100%) 0%, hsl(210 40% 96%) 50%, hsl(221.2 83.2% 53.3% / 0.1) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(270 91% 65%) 0%, hsl(200 91% 60%) 100%);
+    --gradient-secondary: linear-gradient(135deg, hsl(180 91% 67%) 0%, hsl(270 91% 65%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(250 100% 99%) 0%, hsl(210 40% 95%) 50%, hsl(270 91% 65% / 0.1) 100%);
     
     --glass-bg: hsl(0 0% 100% / 0.95);
-    --glass-border: hsl(214.3 31.8% 91.4% / 0.8);
-    --glass-hover: hsl(210 40% 96% / 0.9);
+    --glass-border: hsl(220 20% 88% / 0.8);
+    --glass-hover: hsl(210 40% 94% / 0.9);
     
-    --neon-glow: 0 0 20px hsl(221.2 83.2% 53.3% / 0.4);
-    --neon-glow-strong: 0 0 30px hsl(221.2 83.2% 53.3% / 0.6);
-    --cyber-glow: 0 0 20px hsl(262.1 83.3% 57.8% / 0.4);
+    --neon-glow: 0 0 20px hsl(270 91% 65% / 0.4);
+    --neon-glow-strong: 0 0 30px hsl(270 91% 65% / 0.6);
+    --cyber-glow: 0 0 20px hsl(180 91% 67% / 0.4);
   }
 
   /* Dark theme alias */
