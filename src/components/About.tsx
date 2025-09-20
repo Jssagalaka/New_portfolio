@@ -30,7 +30,7 @@ const About = () => {
           <h2 className="text-4xl lg:text-display font-bold mb-6">
             {t("about.title")}
           </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg text-foreground/80 max-w-3xl mx-auto leading-relaxed">
             {t("about.description")}
           </p>
         </motion.div>
@@ -43,7 +43,7 @@ const About = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-2xl font-bold mb-8 gradient-text">Technical Skills</h3>
+            <h3 className="text-2xl font-bold mb-8 gradient-text">{t("skills.title")}</h3>
             <div className="space-y-6">
               {skills.map((skill, index) => (
                 <motion.div
@@ -61,7 +61,7 @@ const About = () => {
                       </div>
                       <span className="font-semibold">{skill.name}</span>
                     </div>
-                    <span className="text-sm text-muted-foreground">{skill.level}%</span>
+                    <span className="text-sm text-foreground/70">{skill.level}%</span>
                   </div>
                   <div className="h-2 bg-muted rounded-full overflow-hidden">
                     <motion.div
@@ -85,7 +85,7 @@ const About = () => {
             viewport={{ once: true }}
             className="relative"
           >
-            <h3 className="text-2xl font-bold mb-8 gradient-text">Tech Stack</h3>
+            <h3 className="text-2xl font-bold mb-8 gradient-text">{t("about.techStack")}</h3>
             <div className="relative min-h-[400px] glass rounded-2xl p-8 overflow-hidden">
               <div className="flex flex-wrap gap-3">
                 {techStack.map((tech, index) => (
@@ -130,10 +130,10 @@ const About = () => {
           className="grid grid-cols-2 lg:grid-cols-4 gap-8 mt-20"
         >
           {[
-            { number: "50+", label: "Projects Completed" },
-            { number: "5+", label: "Years Experience" },
-            { number: "25+", label: "Happy Clients" },
-            { number: "100K+", label: "Lines of Code" },
+            { number: "50+", label: t("about.projectsCompleted") },
+            { number: "5+", label: t("about.yearsExperience") },
+            { number: "25+", label: t("about.happyClients") },
+            { number: "100K+", label: t("about.codeCommits") },
           ].map((stat, index) => (
             <motion.div
               key={stat.label}
@@ -141,7 +141,7 @@ const About = () => {
               className="text-center p-6 glass rounded-xl hover:neon-glow transition-smooth"
             >
               <div className="text-3xl font-bold gradient-text mb-2">{stat.number}</div>
-              <div className="text-sm text-muted-foreground">{stat.label}</div>
+              <div className="text-sm text-foreground/70">{stat.label}</div>
             </motion.div>
           ))}
         </motion.div>

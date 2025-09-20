@@ -25,19 +25,19 @@ const Skills = () => {
     },
     {
       icon: <Smartphone className="w-8 h-8" />,
-      title: "Mobile & Tools",
+      title: t("skills.tools"),
       skills: ["React Native", "Git", "Docker", "AWS", "Vercel"],
       color: "from-pink-500 to-rose-600"
     },
     {
       icon: <Brain className="w-8 h-8" />,
-      title: "AI & Modern Tech",
+      title: t("skills.ai"),
       skills: ["OpenAI API", "ChatGPT Integration", "Machine Learning", "Python"],
       color: "from-violet-500 to-purple-600"
     },
     {
       icon: <Zap className="w-8 h-8" />,
-      title: "Performance",
+      title: t("skills.performance"),
       skills: ["Optimization", "SEO", "Lighthouse 100", "Web Vitals", "PWA"],
       color: "from-yellow-500 to-orange-600"
     }
@@ -54,7 +54,7 @@ const Skills = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl font-bold gradient-text mb-6">{t("skills.title")}</h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+          <p className="text-foreground/80 text-lg max-w-2xl mx-auto">
             {t("skills.subtitle")}
           </p>
         </motion.div>
@@ -91,7 +91,7 @@ const Skills = () => {
                     className="flex items-center space-x-2"
                   >
                     <div className="w-2 h-2 rounded-full bg-primary"></div>
-                    <span className="text-muted-foreground text-sm">
+                    <span className="text-foreground/70 text-sm">
                       {skill}
                     </span>
                   </motion.div>
@@ -100,7 +100,7 @@ const Skills = () => {
               
               <div className="mt-4 pt-4 border-t border-border/20">
                 <div className="flex items-center justify-between">
-                  <span className="text-xs text-muted-foreground">Proficiency</span>
+                  <span className="text-xs text-foreground/60">{t("skills.proficiency")}</span>
                   <div className="flex space-x-1">
                     {[...Array(5)].map((_, i) => (
                       <motion.div

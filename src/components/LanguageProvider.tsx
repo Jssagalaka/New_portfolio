@@ -47,6 +47,7 @@ const translations = {
       projectsCompleted: "Projects Completed",
       happyClients: "Happy Clients",
       codeCommits: "Code Commits",
+      techStack: "Tech Stack",
     },
 
     // Skills section
@@ -56,7 +57,10 @@ const translations = {
       frontend: "Frontend",
       backend: "Backend",
       database: "Database",
-      tools: "Tools",
+      tools: "Mobile & Tools",
+      ai: "AI & Modern Tech",
+      performance: "Performance",
+      proficiency: "Proficiency",
     },
 
     // Experience section
@@ -149,6 +153,7 @@ const translations = {
       projectsCompleted: "पूर्ण प्रोजेक्ट्स",
       happyClients: "खुश ग्राहक",
       codeCommits: "कोड कमिट्स",
+      techStack: "तकनीकी स्टैक",
     },
 
     // Skills section
@@ -158,7 +163,10 @@ const translations = {
       frontend: "फ्रंटएंड",
       backend: "बैकएंड",
       database: "डेटाबेस",
-      tools: "उपकरण",
+      tools: "मोबाइल और उपकरण",
+      ai: "AI और आधुनिक तकनीक",
+      performance: "प्रदर्शन",
+      proficiency: "निपुणता",
     },
 
     // Experience section
@@ -251,6 +259,7 @@ const translations = {
       projectsCompleted: "પૂર્ણ થયેલા પ્રોજેક્ટ્સ",
       happyClients: "ખુશ ક્લાયન્ટ્સ",
       codeCommits: "કોડ કમિટ્સ",
+      techStack: "ટેક સ્ટેક",
     },
 
     // Skills section
@@ -260,7 +269,10 @@ const translations = {
       frontend: "ફ્રન્ટએન્ડ",
       backend: "બેકએન્ડ",
       database: "ડેટાબેસ",
-      tools: "ટૂલ્સ",
+      tools: "મોબાઇલ અને ટૂલ્સ",
+      ai: "AI અને આધુનિક ટેક",
+      performance: "પ્રદર્શન",
+      proficiency: "પ્રાવીણ્ય",
     },
 
     // Experience section

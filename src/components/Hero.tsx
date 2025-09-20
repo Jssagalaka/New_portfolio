@@ -61,7 +61,7 @@ const Hero = () => {
             </div>
             
             <motion.p 
-              className="text-xl lg:text-2xl text-muted-foreground mb-10 max-w-lg leading-relaxed"
+              className="text-xl lg:text-2xl text-foreground/80 mb-10 max-w-lg leading-relaxed"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.8 }}
@@ -91,10 +91,10 @@ const Hero = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.8, duration: 0.8 }}
             >
-              <a href="#" className="text-muted-foreground hover:text-primary transition-smooth hover:scale-125 p-2 rounded-full glass glass-hover">
+              <a href="#" className="text-foreground/70 hover:text-primary transition-smooth hover:scale-125 p-2 rounded-full glass glass-hover">
                 <Github className="w-8 h-8" />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-secondary transition-smooth hover:scale-125 p-2 rounded-full glass glass-hover">
+              <a href="#" className="text-foreground/70 hover:text-secondary transition-smooth hover:scale-125 p-2 rounded-full glass glass-hover">
                 <Linkedin className="w-8 h-8" />
               </a>
             </motion.div>
@@ -142,7 +142,7 @@ const Hero = () => {
         animate={{ y: [0, 10, 0] }}
         transition={{ duration: 2, repeat: Infinity }}
       >
-        <ChevronDown className="w-6 h-6 text-muted-foreground" />
+        <ChevronDown className="w-6 h-6 text-foreground/60" />
       </motion.div>
     </section>
   );
