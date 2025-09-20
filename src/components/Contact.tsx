@@ -5,8 +5,10 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, MapPin, Phone, Send } from "lucide-react";
 import { toast } from "sonner";
+import { useLanguage } from "@/components/LanguageProvider";
 
 const Contact = () => {
+  const { t } = useLanguage();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -16,7 +18,7 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    toast("Message sent successfully! I'll get back to you soon.", {
+    toast(t("contact.successMessage"), {
       icon: "✅",
     });
     setFormData({ name: "", email: "", subject: "", message: "" });
@@ -60,12 +62,11 @@ const Contact = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl lg:text-display font-bold mb-6">
-            Let's Work <span className="gradient-text">Together</span>
+          <h2 className="text-4xl lg:text-display font-bold mb-6 text-foreground">
+            {t("contact.title")} <span className="gradient-text">{t("contact.titleHighlight")}</span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Have a project in mind? Let's discuss how we can bring your ideas to life.
-            I'm always open to new opportunities and interesting challenges.
+          <p className="text-lg text-foreground/80 max-w-3xl mx-auto">
+            {t("contact.subtitle")}
           </p>
         </motion.div>
 
@@ -78,13 +79,13 @@ const Contact = () => {
             viewport={{ once: true }}
           >
             <div className="glass rounded-2xl p-8">
-              <h3 className="text-2xl font-bold mb-6 gradient-text">Send Message</h3>
+              <h3 className="text-2xl font-bold mb-6 gradient-text">{t("contact.sendMessage")}</h3>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
                     <Input
                       name="name"
-                      placeholder="Your Name"
+                      placeholder={t("contact.namePlaceholder")}
                       value={formData.name}
                       onChange={handleChange}
                       required
@@ -95,7 +96,7 @@ const Contact = () => {
                     <Input
                       name="email"
                       type="email"
-                      placeholder="Your Email"
+                      placeholder={t("contact.emailPlaceholder")}
                       value={formData.email}
                       onChange={handleChange}
                       required
@@ -106,7 +107,7 @@ const Contact = () => {
                 <div>
                   <Input
                     name="subject"
-                    placeholder="Subject"
+                    placeholder={t("contact.subjectPlaceholder")}
                     value={formData.subject}
                     onChange={handleChange}
                     required
@@ -116,7 +117,7 @@ const Contact = () => {
                 <div>
                   <Textarea
                     name="message"
-                    placeholder="Your Message"
+                    placeholder={t("contact.messagePlaceholder")}
                     rows={6}
                     value={formData.message}
                     onChange={handleChange}
@@ -130,7 +131,7 @@ const Contact = () => {
                   className="w-full glass glass-hover neon-glow"
                 >
                   <Send className="w-5 h-5 mr-2" />
-                  Send Message
+                  {t("contact.sendButton")}
                 </Button>
               </form>
             </div>
@@ -145,10 +146,9 @@ const Contact = () => {
             className="space-y-8"
           >
             <div>
-              <h3 className="text-2xl font-bold mb-6 gradient-text">Get in Touch</h3>
-              <p className="text-muted-foreground mb-8 leading-relaxed">
-                I'm currently available for freelance work and full-time opportunities. 
-                Whether you have a project idea or just want to say hello, feel free to reach out!
+              <h3 className="text-2xl font-bold mb-6 gradient-text">{t("contact.getInTouch")}</h3>
+              <p className="text-foreground/80 mb-8 leading-relaxed">
+                {t("contact.availability")}
               </p>
             </div>
 
@@ -169,8 +169,8 @@ const Contact = () => {
                     <info.icon className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <div className="font-semibold">{info.label}</div>
-                    <div className="text-muted-foreground group-hover:text-foreground transition-smooth">
+                    <div className="font-semibold text-foreground">{info.label}</div>
+                    <div className="text-foreground/70 group-hover:text-foreground transition-smooth">
                       {info.value}
                     </div>
                   </div>
@@ -188,11 +188,10 @@ const Contact = () => {
             >
               <div className="flex items-center gap-3 mb-3">
                 <div className="w-3 h-3 bg-accent rounded-full animate-pulse" />
-                <span className="font-semibold text-accent">Available for Work</span>
+                <span className="font-semibold text-accent">{t("contact.availableForWork")}</span>
               </div>
-              <p className="text-sm text-muted-foreground">
-                Currently accepting new projects and collaborations. 
-                Expected response time: within 24 hours.
+              <p className="text-sm text-foreground/70">
+                {t("contact.responseTime")}
               </p>
             </motion.div>
           </motion.div>

@@ -12,8 +12,7 @@ import { useLanguage } from "@/components/LanguageProvider";
 const languages = [
   { code: "en", name: "English", flag: "🇺🇸" },
   { code: "hi", name: "हिन्दी", flag: "🇮🇳" },  
-  { code: "es", name: "Español", flag: "🇪🇸" },
-  { code: "fr", name: "Français", flag: "🇫🇷" },
+  { code: "gu", name: "ગુજરાતી", flag: "🇮🇳" },
 ];
 
 const LanguageSelector = () => {

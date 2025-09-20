@@ -48,7 +48,7 @@
     --transition-spring: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
 
-  /* Light Professional Theme */
+    /* Light Professional Theme */
   .light {
     --background: 250 100% 99%;
     --foreground: 220 30% 15%;
@@ -61,7 +61,7 @@
     --secondary: 200 91% 60%;
     --secondary-foreground: 0 0% 100%;
     --muted: 210 40% 95%;
-    --muted-foreground: 220 30% 40%;
+    --muted-foreground: 220 30% 35%;
     --accent: 180 91% 67%;
     --accent-foreground: 220 30% 15%;
     --destructive: 0 84% 60%;
