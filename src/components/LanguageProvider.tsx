@@ -24,8 +24,10 @@ const translations = {
       about: "About",
       skills: "Skills",
       experience: "Experience",
+      projects: "Projects",
       testimonials: "Testimonials",
       contact: "Contact",
+      hireMe: "Hire Me",
     },
 
     // Hero section
@@ -80,6 +82,14 @@ const translations = {
       exp2: "Developed responsive user interfaces for large-scale enterprise applications. Implemented design systems and improved application performance.",
       exp3: "Built full-stack applications from scratch using modern technologies. Collaborated with cross-functional teams to deliver high-quality products.",
       exp4: "Started my journey learning web development and contributing to various client projects. Gained experience in HTML, CSS, JavaScript, and React.",
+      education: "Education",
+      certifications: "Certifications",
+    },
+
+    // Projects section
+    projects: {
+      title: "Featured Projects",
+      subtitle: "Here are some of my recent projects that showcase my skills and experience",
     },
 
     // Testimonials section
@@ -130,8 +140,10 @@ const translations = {
       about: "के बारे में",
       skills: "कौशल",
       experience: "अनुभव",
+      projects: "प्रोजेक्ट्स",
       testimonials: "प्रशंसापत्र",
       contact: "संपर्क",
+      hireMe: "मुझे नियुक्त करें",
     },
 
     // Hero section
@@ -186,6 +198,14 @@ const translations = {
       exp2: "बड़े पैमाने के एंटरप्राइज़ एप्लिकेशन के लिए रिस्पॉन्सिव यूजर इंटरफेस विकसित किए। डिज़ाइन सिस्टम लागू किए और एप्लिकेशन प्रदर्शन में सुधार किया।",
       exp3: "आधुनिक तकनीकों का उपयोग करके शुरुआत से फुल-स्टैक एप्लिकेशन बनाए। उच्च गुणवत्ता वाले उत्पाद देने के लिए क्रॉस-फंक्शनल टीमों के साथ सहयोग किया।",
       exp4: "वेब डेवलपमेंट सीखने और विभिन्न क्लाइंट प्रोजेक्ट्स में योगदान देकर अपनी यात्रा शुरू की। HTML, CSS, JavaScript, और React में अनुभव प्राप्त किया।",
+      education: "शिक्षा",
+      certifications: "प्रमाणपत्र",
+    },
+
+    // Projects section
+    projects: {
+      title: "विशेष प्रोजेक्ट्स",
+      subtitle: "ये मेरे कुछ हाल के प्रोजेक्ट्स हैं जो मेरे कौशल और अनुभव को प्रदर्शित करते हैं",
     },
 
     // Testimonials section
@@ -236,8 +256,10 @@ const translations = {
       about: "વિશે",
       skills: "કુશળતા",
       experience: "અનુભવ",
+      projects: "પ્રોજેક્ટ્સ",
       testimonials: "પ્રશંસાપત્રો",
       contact: "સંપર્ક",
+      hireMe: "મને હાયર કરો",
     },
 
     // Hero section
@@ -292,6 +314,14 @@ const translations = {
       exp2: "મોટા પાયે એન્ટરપ્રાઇઝ એપ્લિકેશન્સ માટે રિસ્પોન્સિવ યુઝર ઇન્ટરફેસ વિકસાવ્યા. ડિઝાઇન સિસ્ટમ્સ અમલમાં મૂક્યા અને એપ્લિકેશન પ્રદર્શન સુધાર્યું.",
       exp3: "આધુનિક ટેક્નોલોજીઓનો ઉપયોગ કરીને શરૂઆતથી ફુલ-સ્ટેક એપ્લિકેશન્સ બનાવ્યા. ઉચ્ચ ગુણવત્તાના ઉત્પાદનો પહોંચાડવા માટે ક્રોસ-ફંક્શનલ ટીમ્સ સાથે સહયોગ કર્યો.",
       exp4: "વેબ ડેવલપમેન્ટ શીખવાથી અને વિવિધ ક્લાયન્ટ પ્રોજેક્ટ્સમાં યોગદાન આપવાથી મારી યાત્રા શરૂ કરી. HTML, CSS, JavaScript અને Reactમાં અનુભવ મેળવ્યો.",
+      education: "શિક્ષણ",
+      certifications: "પ્રમાણપત્રો",
+    },
+
+    // Projects section
+    projects: {
+      title: "વિશેષ પ્રોજેક્ટ્સ",
+      subtitle: "આ મારા કેટલાક તાજેતરના પ્રોજેક્ટ્સ છે જે મારી કુશળતા અને અનુભવને દર્શાવે છે",
     },
 
     // Testimonials section

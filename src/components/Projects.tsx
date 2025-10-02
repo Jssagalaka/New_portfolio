@@ -1,8 +1,10 @@
 import { motion } from "framer-motion";
 import { ExternalLink, Github, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useLanguage } from "@/components/LanguageProvider";
 
 const Projects = () => {
+  const { t } = useLanguage();
   const projects = [
     {
       id: 1,
@@ -56,11 +58,11 @@ const Projects = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl lg:text-display font-bold mb-6">
-            Featured <span className="gradient-text">Projects</span>
+          <h2 className="text-4xl lg:text-display font-bold gradient-text mb-6">
+            {t("projects.title")}
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Here are some of my recent projects that showcase my skills and experience
+            {t("projects.subtitle")}
           </p>
         </motion.div>
 
