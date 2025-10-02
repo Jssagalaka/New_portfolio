@@ -196,6 +196,68 @@ const Contact = () => {
             </motion.div>
           </motion.div>
         </div>
+
+        {/* Contact Info Cards */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          viewport={{ once: true }}
+          className="grid md:grid-cols-3 gap-6 mt-12"
+        >
+          <div className="glass glass-hover rounded-xl p-6 text-center hover-lift">
+            <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/20 mb-4">
+              <Mail className="w-6 h-6 text-primary" />
+            </div>
+            <h4 className="font-semibold text-foreground mb-2">{t("contact.email")}</h4>
+            <p className="text-muted-foreground text-sm">your.email@example.com</p>
+          </div>
+          <div className="glass glass-hover rounded-xl p-6 text-center hover-lift">
+            <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/20 mb-4">
+              <MapPin className="w-6 h-6 text-primary" />
+            </div>
+            <h4 className="font-semibold text-foreground mb-2">{t("contact.location")}</h4>
+            <p className="text-muted-foreground text-sm">San Francisco, CA</p>
+          </div>
+          <div className="glass glass-hover rounded-xl p-6 text-center hover-lift">
+            <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/20 mb-4">
+              <Phone className="w-6 h-6 text-primary" />
+            </div>
+            <h4 className="font-semibold text-foreground mb-2">{t("contact.phone")}</h4>
+            <p className="text-muted-foreground text-sm">+1 (123) 456-7890</p>
+          </div>
+        </motion.div>
+
+        {/* FAQ Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+          viewport={{ once: true }}
+          className="mt-20"
+        >
+          <h3 className="text-3xl font-bold gradient-text text-center mb-12">
+            {t("contact.faq.title")}
+          </h3>
+          <div className="max-w-3xl mx-auto space-y-4">
+            <div className="glass glass-hover rounded-xl p-6">
+              <h4 className="font-semibold text-foreground mb-2">{t("contact.faq.q1")}</h4>
+              <p className="text-muted-foreground text-sm">{t("contact.faq.a1")}</p>
+            </div>
+            <div className="glass glass-hover rounded-xl p-6">
+              <h4 className="font-semibold text-foreground mb-2">{t("contact.faq.q2")}</h4>
+              <p className="text-muted-foreground text-sm">{t("contact.faq.a2")}</p>
+            </div>
+            <div className="glass glass-hover rounded-xl p-6">
+              <h4 className="font-semibold text-foreground mb-2">{t("contact.faq.q3")}</h4>
+              <p className="text-muted-foreground text-sm">{t("contact.faq.a3")}</p>
+            </div>
+            <div className="glass glass-hover rounded-xl p-6">
+              <h4 className="font-semibold text-foreground mb-2">{t("contact.faq.q4")}</h4>
+              <p className="text-muted-foreground text-sm">{t("contact.faq.a4")}</p>
+            </div>
+          </div>
+        </motion.div>
       </div>
     </section>
   );

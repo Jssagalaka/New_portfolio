@@ -43,8 +43,52 @@ const translations = {
     // About section
     about: {
       title: "About Me",
-      subtitle: "Passionate developer with 5+ years of experience creating innovative web solutions.",
-      description: "I'm a full-stack developer dedicated to creating exceptional web applications that combine beautiful design with robust functionality. With experience in modern technologies like React, Node.js, and cloud databases, I enjoy transforming complex ideas into elegant digital solutions.",
+      subtitle: "Who I am and what I do",
+      heading: "Let's get to know each other",
+      description1:
+        "I'm a passionate full-stack developer with expertise in modern web technologies. With over 5 years of experience, I've helped startups and enterprise companies build scalable and performant applications.",
+      description2:
+        "My expertise lies in React, Node.js, and the MERN stack. I believe in writing clean, maintainable code while focusing on user experience and performance optimization.",
+      expertise: {
+        web: "Expert in Web Development",
+        mobile: "Mobile Responsive Design",
+        backend: "Backend Architecture",
+        design: "UI/UX Design",
+      },
+      button: "View My Work",
+      highlights: {
+        experience: "Years Experience",
+        projects: "Projects Completed",
+        clients: "Happy Clients",
+        satisfaction: "Client Satisfaction",
+      },
+      journey: {
+        title: "My Journey",
+        start: "Started journey in web development",
+        first: "First full-time developer position",
+        growth: "Delivered multiple successful projects",
+        senior: "Promoted to senior developer",
+        present: "Consulting and freelancing",
+      },
+      services: {
+        title: "What I Do",
+        web: {
+          title: "Web Development",
+          desc: "Building responsive websites with modern technologies",
+        },
+        mobile: {
+          title: "Mobile Apps",
+          desc: "Cross-platform mobile applications",
+        },
+        backend: {
+          title: "Backend Development",
+          desc: "Scalable server-side solutions",
+        },
+        design: {
+          title: "UI/UX Design",
+          desc: "Beautiful and user-friendly interfaces",
+        },
+      },
       yearsExperience: "Years Experience",
       projectsCompleted: "Projects Completed",
       happyClients: "Happy Clients",
@@ -123,6 +167,20 @@ const translations = {
       availableForWork: "Available for Work",
       responseTime: "Currently accepting new projects and collaborations. Expected response time: within 24 hours.",
       successMessage: "Message sent successfully! I'll get back to you soon.",
+      email: "Email",
+      location: "Location",
+      phone: "Phone",
+      faq: {
+        title: "Frequently Asked Questions",
+        q1: "What is your response rate?",
+        a1: "I typically respond to all inquiries within 24 hours.",
+        q2: "Do you work remotely?",
+        a2: "Yes, I'm comfortable working remotely and have experience with clients worldwide.",
+        q3: "How does your pricing work?",
+        a3: "Pricing varies based on project complexity and timeline. Contact me for a detailed quote.",
+        q4: "Do you take on long-term projects?",
+        a4: "Yes, I'm available for both short-term and long-term projects.",
+      },
     },
 
     // Footer
@@ -159,8 +217,52 @@ const translations = {
     // About section
     about: {
       title: "मेरे बारे में",
-      subtitle: "नवाचार वेब समाधान बनाने में 5+ वर्षों के अनुभव के साथ जुनूनी डेवलपर।",
-      description: "मैं एक फुल-स्टैक डेवलपर हूँ जो असाधारण वेब एप्लिकेशन बनाने के लिए समर्पित हूँ जो सुंदर डिज़ाइन को मजबूत कार्यक्षमता के साथ जोड़ते हैं। React, Node.js, और क्लाउड डेटाबेस जैसी आधुनिक तकनीकों में अनुभव के साथ, मैं जटिल विचारों को सुरुचिपूर्ण डिजिटल समाधानों में बदलने का आनंद लेता हूँ।",
+      subtitle: "मैं कौन हूं और मैं क्या करता हूं",
+      heading: "चलिए एकदूसरे को जानते हैं",
+      description1:
+        "मैं एक पैशनेट फुल स्टैक डेवलपर हूं, जो आधुनिक वेब तकनीकों में माहिर हूं। अपने 5+ साल के अनुभव के साथ, मैंने स्टार्टअप्स और एंटरप्राइज कंपनियों को स्केलेबल और परफॉर्मेंट एप्लीकेशन बनाने में मदद की है।",
+      description2:
+        "मेरी विशेषता रिएक्ट, नोड.js और MERN स्टैक में निहित है। मैं यूजर एक्सपीरियंस और परफॉर्मेंस ऑप्टिमाइजेशन पर ध्यान केंद्रित करते हुए क्लीन, मेंटेनेबल कोड बनाने में विश्वास करता हूं।",
+      expertise: {
+        web: "वेब डेवलपमेंट में माहिर",
+        mobile: "मोबाइल रेस्पॉन्सिव डिज़ाइन",
+        backend: "बैकएंड आर्किटेक्चर",
+        design: "यूआई/यूएक्स डिज़ाइन",
+      },
+      button: "मेरा काम देखें",
+      highlights: {
+        experience: "वर्षों का अनुभव",
+        projects: "पूर्ण परियोजनाएं",
+        clients: "खुश ग्राहक",
+        satisfaction: "ग्राहक संतुष्टि",
+      },
+      journey: {
+        title: "मेरी यात्रा",
+        start: "वेब डेवलपमेंट में यात्रा शुरू की",
+        first: "पहला फुल टाइम डेवलपर पद",
+        growth: "कई सफल परियोजनाओं की डिलीवरी",
+        senior: "सीनियर डेवलपर पद पर पदोन्नति",
+        present: "कंसल्टिंग और फ्रीलांसिंग",
+      },
+      services: {
+        title: "मैं क्या करता हूं",
+        web: {
+          title: "वेब डेवलपमेंट",
+          desc: "आधुनिक तकनीकों का उपयोग करके रिस्पॉन्सिव वेबसाइट बनाना",
+        },
+        mobile: {
+          title: "मोबाइल ऐप्स",
+          desc: "क्रॉस-प्लेटफॉर्म मोबाइल एप्लिकेशन",
+        },
+        backend: {
+          title: "बैकएंड डेवलपमेंट",
+          desc: "स्केलेबल सर्वर-साइड समाधान",
+        },
+        design: {
+          title: "यूआई/यूएक्स डिज़ाइन",
+          desc: "सुंदर और उपयोगकर्ता-अनुकूल इंटरफेस",
+        },
+      },
       yearsExperience: "वर्षों का अनुभव",
       projectsCompleted: "पूर्ण प्रोजेक्ट्स",
       happyClients: "खुश ग्राहक",
@@ -239,6 +341,20 @@ const translations = {
       availableForWork: "काम के लिए उपलब्ध",
       responseTime: "वर्तमान में नए प्रोजेक्ट्स और सहयोग स्वीकार कर रहा हूं। अपेक्षित प्रतिक्रिया समय: 24 घंटे के भीतर।",
       successMessage: "संदेश सफलतापूर्वक भेजा गया! मैं जल्द ही आपसे संपर्क करूंगा।",
+      email: "ईमेल",
+      location: "स्थान",
+      phone: "फोन",
+      faq: {
+        title: "अक्सर पूछे जाने वाले प्रश्न",
+        q1: "आपकी उत्तर दर क्या है?",
+        a1: "मैं आमतौर पर 24 घंटों के भीतर सभी पूछताछ का जवाब देता हूं।",
+        q2: "क्या आप दूर से काम करते हैं?",
+        a2: "हां, मैं दूर से काम करने में सहज हूं और दुनिया भर के ग्राहकों के साथ काम करता हूं।",
+        q3: "आपकी मूल्य निर्धारण कैसे काम करता है?",
+        a3: "परियोजना की जटिलता और समयरेखा के आधार पर मूल्य निर्धारण अलग-अलग होता है। मुझसे विस्तृत उद्धरण के लिए संपर्क करें।",
+        q4: "क्या आप दीर्घकालिक परियोजनाओं को लेते हैं?",
+        a4: "हां, मैं अल्पकालिक और दीर्घकालिक दोनों परियोजनाओं के लिए उपलब्ध हूं।",
+      },
     },
 
     // Footer
@@ -275,13 +391,16 @@ const translations = {
     // About section
     about: {
       title: "મારા વિશે",
-      subtitle: "નવીન વેબ સોલ્યુશન્સ બનાવવામાં 5+ વર્ષના અનુભવ સાથેનો જુસ્સાદાર ડેવલપર.",
-      description: "હું એક ફુલ-સ્ટેક ડેવલપર છું જે અસાધારણ વેબ એપ્લિકેશન્સ બનાવવા માટે સમર્પિત છું જે સુંદર ડિઝાઇનને મજબૂત કાર્યક્ષમતા સાથે જોડે છે. React, Node.js અને ક્લાઉડ ડેટાબેસેસ જેવી આધુનિક ટેક્નોલોજીઓમાં અનુભવ સાથે, હું જટિલ વિચારોને ભવ્ય ડિજિટલ સોલ્યુશન્સમાં ફેરવવાનો આનંદ માણું છું.",
-      yearsExperience: "વર્ષોનો અનુભવ",
-      projectsCompleted: "પૂર્ણ થયેલા પ્રોજેક્ટ્સ",
-      happyClients: "ખુશ ક્લાયન્ટ્સ",
-      codeCommits: "કોડ કમિટ્સ",
-      techStack: "ટેક સ્ટેક",
+      subtitle: "હું કોણ છું અને હું શું કરું છું",
+      heading: "ચાલો એકબીજાને ઓળખીએ",
+      description1: "હું આધુનિક વેબ ટેકનોલોજીમાં નિષ્ણાત, એક જુસ્સાદાર ફુલ સ્ટેક ડેવલપર છું. 5+ વર્ષના અનુભવ સાથે, મેં સ્ટાર્ટઅપ્સ અને એન્ટરપ્રાઇઝ કંપનીઓને સ્કેલેબલ અને પર્ફોર્મન્ટ એપ્લિકેશન બનાવવામાં મદદ કરી છે.",
+      description2: "મારી નિપુણતા React, Node.js અને MERN સ્ટેકમાં રહેલી છે. હું યુઝર એક્સપીરિયન્સ અને પર્ફોર્મન્સ ઑપ્ટિમાઇઝેશન પર ધ્યાન કેન્દ્રિત કરતાં ક્લીન, મેઇન્ટેનેબલ કોડ લખવામાં વિશ્વાસ રાખું છું.",
+      expertise: { web: "વેબ ડેવલપમેન્ટમાં નિષ્ણાત", mobile: "મોબાઇલ રિસ્પોન્સિવ ડિઝાઇન", backend: "બેકએન્ડ આર્કિટેક્ચર", design: "UI/UX ડિઝાઇન" },
+      button: "મારું કામ જુઓ",
+      highlights: { experience: "વર્ષોનો અનુભવ", projects: "પ્રોજેક્ટ્સ પૂર્ણ", clients: "ખુશ ક્લાયન્ટ્સ", satisfaction: "ક્લાયન્ટ સંતોષ" },
+      journey: { title: "મારી યાત્રા", start: "વેબ ડેવલપમેન્ટમાં યાત્રા શરૂ કરી", first: "પ્રથમ ફુલ-ટાઇમ ડેવલપર પદ", growth: "અનેક સફળ પ્રોજેક્ટ્સ ડિલિવર કર્યા", senior: "સિનિયર ડેવલપર તરીકે પ્રમોશન", present: "કન્સલ્ટિંગ અને ફ્રીલાન્સિંગ" },
+      services: { title: "હું શું કરું છું", web: { title: "વેબ ડેવલપમેન્ટ", desc: "આધુનિક ટેકનોલોજી સાથે રિસ્પોન્સિવ વેબસાઇટ્સ બનાવવી" }, mobile: { title: "મોબાઇલ એપ્સ", desc: "ક્રોસ-પ્લેટફોર્મ મોબાઇલ એપ્લિકેશન્સ" }, backend: { title: "બેકએન્ડ ડેવલપમેન્ટ", desc: "સ્કેલેબલ સર્વર-સાઇડ સોલ્યુશન્સ" }, design: { title: "UI/UX ડિઝાઇન", desc: "સુંદર અને વપરાશકર્તા-મૈત્રીપૂર્ણ ઇન્ટરફેસ" } },
+      yearsExperience: "વર્ષોનો અનુભવ", projectsCompleted: "પૂર્ણ થયેલા પ્રોજેક્ટ્સ", happyClients: "ખુશ ક્લાયન્ટ્સ", codeCommits: "કોડ કમિટ્સ", techStack: "ટેક સ્ટેક",
     },
 
     // Skills section
