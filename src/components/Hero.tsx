@@ -25,8 +25,8 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <div className="container mx-auto px-6 z-10">
+    <section className="relative min-h-[calc(100vh-5rem)] flex items-center justify-center overflow-hidden">
+      <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <motion.div
@@ -91,10 +91,10 @@ const Hero = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.8, duration: 0.8 }}
             >
-              <a href="#" className="text-foreground/70 hover:text-primary transition-smooth hover:scale-125 p-2 rounded-full glass glass-hover">
+              <a href="https://github.com/Jssagalaka" target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-primary transition-smooth hover:scale-125 p-2 rounded-full glass glass-hover">
                 <Github className="w-8 h-8" />
               </a>
-              <a href="#" className="text-foreground/70 hover:text-secondary transition-smooth hover:scale-125 p-2 rounded-full glass glass-hover">
+              <a href="https://www.linkedin.com/in/jaydeep-sagalka" target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-secondary transition-smooth hover:scale-125 p-2 rounded-full glass glass-hover">
                 <Linkedin className="w-8 h-8" />
               </a>
             </motion.div>

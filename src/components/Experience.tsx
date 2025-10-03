@@ -6,73 +6,53 @@ const Experience = () => {
   const { t } = useLanguage();
   const experiences = [
     {
-      title: "Senior MERN Stack Developer",
-      company: "TechCorp Solutions",
-      location: "San Francisco, CA",
-      period: "2023 - Present",
+      title: t("experience.position1"),
+      company: t("experience.company1"),
+      location: "Keshod, Gujarat",
+      period: t("experience.duration1"),
       type: "Full-time",
-      description: "Led development of enterprise-level applications using React, Node.js, and MongoDB. Improved app performance by 40% and mentored junior developers.",
+      description: t("experience.exp1"),
       achievements: [
-        "Built scalable microservices architecture",
-        "Implemented real-time chat system with 10k+ users",
-        "Reduced bundle size by 35% through optimization"
+        "Built secure, scalable APIs using Node.js, Express, and MongoDB",
+        "Led authentication and role-based access implementation",
+        "Performed debugging and troubleshooting to optimize performance"
       ],
-      technologies: ["React", "Node.js", "MongoDB", "AWS", "TypeScript"],
+      technologies: ["Node.js", "Express", "MongoDB", "JWT", "Git", "React"],
       color: "from-blue-500 to-purple-600"
     },
     {
-      title: "Full Stack Developer",
-      company: "InnovateLab",
-      location: "New York, NY",
-      period: "2021 - 2023",
+      title: t("experience.position2"),
+      company: t("experience.company2"),
+      location: "Keshod, Gujarat",
+      period: t("experience.duration2"),
       type: "Full-time",
-      description: "Developed modern web applications with focus on user experience and performance. Collaborated with design team to create pixel-perfect interfaces.",
+      description: t("experience.exp2"),
       achievements: [
-        "Launched 5+ production applications",
-        "Achieved 95+ Lighthouse scores",
-        "Integrated payment systems and APIs"
+        "Developed full-stack web apps with React and Tailwind CSS",
+        "Integrated APIs and implemented JWT authentication",
+        "Supported Agile team workflows and version control with Git"
       ],
-      technologies: ["Next.js", "Express.js", "PostgreSQL", "Stripe", "Docker"],
+      technologies: ["React", "Tailwind CSS", "Node.js", "Express", "MongoDB", "JWT"],
       color: "from-green-500 to-teal-600"
-    },
-    {
-      title: "Frontend Developer",
-      company: "StartupHub",
-      location: "Austin, TX",
-      period: "2020 - 2021",
-      type: "Contract",
-      description: "Created responsive web interfaces and improved user engagement by 60%. Specialized in React ecosystem and modern CSS frameworks.",
-      achievements: [
-        "Rebuilt company website from scratch",
-        "Implemented Progressive Web App features",
-        "Optimized for mobile-first experience"
-      ],
-      technologies: ["React", "Tailwind CSS", "Firebase", "PWA"],
-      color: "from-orange-500 to-red-600"
     }
   ];
 
   const education = [
     {
-      degree: "Bachelor of Computer Science",
-      school: "University of Technology",
-      location: "California",
-      period: "2016 - 2020",
-      gpa: "3.8/4.0",
+      degree: t("experience.degree"),
+      school: t("experience.university"),
+      location: "Gujarat, India",
+      period: t("experience.graduationYear"),
+      gpa: t("experience.cgpa"),
       achievements: [
-        "Summa Cum Laude",
-        "Computer Science Excellence Award",
-        "Dean's List for 6 semesters"
+        "Completed BCA with focus on web development",
+        "Gained expertise in MERN Stack technologies",
+        "Participated in various coding projects"
       ]
     }
   ];
 
-  const certifications = [
-    { name: "AWS Certified Developer", issuer: "Amazon", year: "2023" },
-    { name: "MongoDB Certified Developer", issuer: "MongoDB", year: "2022" },
-    { name: "React Professional Certificate", issuer: "Meta", year: "2021" },
-    { name: "Node.js Application Developer", issuer: "OpenJS", year: "2021" }
-  ];
+  const certifications: any[] = [];
 
   return (
     <div className="py-20">
@@ -169,7 +149,7 @@ const Experience = () => {
         </motion.div>
 
         {/* Education & Certifications */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-1 gap-12">
           {/* Education */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -177,56 +157,28 @@ const Experience = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-2xl font-bold gradient-text mb-6">{t("experience.education")}</h3>
-            {education.map((edu, index) => (
-              <div key={index} className="glass glass-hover rounded-xl p-6 hover-lift">
-                <h4 className="text-lg font-semibold text-foreground mb-2">{edu.degree}</h4>
-                <div className="text-primary font-medium mb-2">{edu.school}</div>
-                <div className="flex items-center space-x-4 text-sm text-muted-foreground mb-3">
-                  <span>{edu.period}</span>
-                  <span>•</span>
-                  <span>{edu.location}</span>
-                  <span>•</span>
-                  <span>GPA: {edu.gpa}</span>
-                </div>
-                <div className="space-y-1">
-                  {edu.achievements.map((achievement, i) => (
-                    <div key={i} className="flex items-center space-x-2 text-sm text-muted-foreground">
-                      <Award className="w-3 h-3 text-primary" />
-                      <span>{achievement}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </motion.div>
-
-          {/* Certifications */}
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-          >
-            <h3 className="text-2xl font-bold gradient-text mb-6">{t("experience.certifications")}</h3>
-            <div className="space-y-4">
-              {certifications.map((cert, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.4, delay: index * 0.1 }}
-                  viewport={{ once: true }}
-                  className="glass glass-hover rounded-xl p-4 hover-lift"
-                >
-                  <div className="flex items-center justify-between">
-                    <div>
-                      <h4 className="font-semibold text-foreground">{cert.name}</h4>
-                      <p className="text-sm text-muted-foreground">{cert.issuer}</p>
-                    </div>
-                    <span className="text-primary font-medium">{cert.year}</span>
+            <h3 className="text-2xl font-bold gradient-text mb-6 text-center">{t("experience.education")}</h3>
+            <div className="max-w-2xl mx-auto">
+              {education.map((edu, index) => (
+                <div key={index} className="glass glass-hover rounded-xl p-6 hover-lift">
+                  <h4 className="text-lg font-semibold text-foreground mb-2">{edu.degree}</h4>
+                  <div className="text-primary font-medium mb-2">{edu.school}</div>
+                  <div className="flex items-center space-x-4 text-sm text-muted-foreground mb-3 flex-wrap">
+                    <span>{edu.period}</span>
+                    <span>•</span>
+                    <span>{edu.location}</span>
+                    <span>•</span>
+                    <span>{edu.gpa}</span>
                   </div>
-                </motion.div>
+                  <div className="space-y-1">
+                    {edu.achievements.map((achievement, i) => (
+                      <div key={i} className="flex items-center space-x-2 text-sm text-muted-foreground">
+                        <Award className="w-3 h-3 text-primary" />
+                        <span>{achievement}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
               ))}
             </div>
           </motion.div>
